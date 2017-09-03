@@ -55,6 +55,13 @@ List of supported columns with valid examples and types.
   
 ### /general/update
 
+```php
+$api = new ICObenchAPI('/general');
+$api->set('RaisedBtc','142.234892');
+$api->update();
+echo $api->result;
+```  
+
 <details><summary><b>About ICO</b> (<i>TEXT</i>)</summary>
 
 #### PHP
@@ -467,13 +474,19 @@ $api->set('TradingOn','Bitfinex;Bittrex;Bitstamp');
 
 ### /general/get
 
+```php
+$api = new ICObenchAPI('/general');
+$api->set('Rating');
+$api->get();
+echo $api->result;
+```  
+
 <details><summary><b>ICO rating</b></summary>
 
 #### PHP
 
 ```php
 $api->set('Rating');
-$api->result; // JSON format
 ```  
 
 </details> 
