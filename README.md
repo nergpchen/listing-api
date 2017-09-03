@@ -7,7 +7,7 @@ Request your API keys by sending your email to info@icobench.com
 
 Currently available simple PHP Class to update ICO data - such as raised amount, token name, URLs, various descriptions, etc.
 
-## Installing
+### Installing
 
 Choose your favorite language
 
@@ -53,7 +53,7 @@ List of supported columns with valid examples and types.
 
 - <b>DATE</b> - Date and time must be formated as YYYY-MM-DD HH:mm:ss.
   
-### /general
+### /general/update
 
 <details><summary><b>About ICO</b> (<i>TEXT</i>)</summary>
 
@@ -465,9 +465,18 @@ $api->set('TradingOn','Bitfinex;Bittrex;Bitstamp');
 
 </details>   
 
-### /team
+### /general/get
 
-Soon.
+<details><summary><b>ICO rating</b></summary>
+
+#### PHP
+
+```php
+$api->set('Rating');
+$api->result; // JSON format
+```  
+
+</details> 
 
 ## Authors
 
