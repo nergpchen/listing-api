@@ -29,7 +29,7 @@ $api->set('Platform','Waves');      // Column to update and its content - "Platf
 $api->set('Token','BENCH');         // Set "Token" name to "BENCH"
 	
 // Update and fetch response
-if(!$api->update()){
+if(!$api->update()){ // Can also be $api->get() or $api->insert()
   echo $api->result;
 }else{
   echo $api->result;
