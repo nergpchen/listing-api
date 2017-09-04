@@ -489,7 +489,76 @@ echo $api->result;
 $api->set('Rating');
 ```  
 
-</details> 
+</details>
+
+### /team/get
+
+```php
+$api = new ICObenchAPI('/team');
+$api->set('All'); // Get all columns
+$api->get();
+echo $api->result;
+```  
+
+<details><summary><b>All columns</b></summary>
+
+#### PHP
+
+```php
+$api->set('All');
+```  
+
+</details>
+
+<details><summary><b>IDs of team members</b></summary>
+
+#### PHP
+
+```php
+$api->set('TeamId');
+```  
+
+</details>
+
+<details><summary><b>Groups of team members</b></summary>
+
+#### PHP
+
+```php
+$api->set('TeamGroup');
+```  
+
+</details>
+
+<details><summary><b>Names of team members</b></summary>
+
+#### PHP
+
+```php
+$api->set('TeamName');
+```  
+
+</details>
+
+<details><summary><b>Titles of team members</b></summary>
+
+#### PHP
+
+```php
+$api->set('TeamTitle');
+```  
+
+</details>
+
+<details><summary><b>Links of team members</b></summary>
+
+#### PHP
+
+```php
+$api->set('TeamLinks');
+```  
+
+</details>
 
 ## Authors
 
