@@ -36,8 +36,14 @@ if(!$api->update()){ // Can also be $api->get() or $api->insert()
 }
 ```
 
-## Supported columns you can update
-List of supported columns with valid examples and types.
+## Supported columns, types and methods
+Code examples and types.
+
+### Groups with methods
+
+- [/general/update](#generalupdate)
+- [/general/get](#generalget)
+- [/team/get](#teamget)
 
 ### Types
 
