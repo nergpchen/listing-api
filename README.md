@@ -45,6 +45,7 @@ Code examples and types.
 - [/general/get](#generalget)
 - [/team/get](#teamget)
 - [/team/remove](#teamremove)
+- [/team/update](#teamupdate)
 
 ### Types
 
@@ -582,6 +583,60 @@ echo $api->result;
 
 ```php
 $api->set('TeamId',13);
+```  
+
+</details>
+
+### /team/update
+
+```php
+$api = new ICObenchAPI('/team');
+$api->set('TeamId',132); // Set member's ID to update
+$api->set('TeamName','Benchy'); // Set new name
+$api->update();
+echo $api->result;
+```  
+
+<details><summary><b>Group of team member</b></summary>
+
+#### PHP
+
+```php
+$api->set('TeamId',132);
+$api->set('TeamGroup','Board members');
+```  
+
+</details>
+
+<details><summary><b>Name of team member</b></summary>
+
+#### PHP
+
+```php
+$api->set('TeamId',132);
+$api->set('TeamName','Benchy');
+```  
+
+</details>
+
+<details><summary><b>Title of team member</b></summary>
+
+#### PHP
+
+```php
+$api->set('TeamId',132);
+$api->set('TeamTitle','CEO of Awesome');
+```  
+
+</details>
+
+<details><summary><b>Links of team member</b></summary>
+
+#### PHP
+
+```php
+$api->set('TeamId',132);
+$api->set('TeamLinks','https://facebook.com/ICObench;https://twitter.com/ICObench');
 ```  
 
 </details>
