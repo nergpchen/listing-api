@@ -53,8 +53,10 @@ Code examples and types.
 
 - <b>PLAIN</b> - No HTML tags are allowed.
   
-- <b>URL</b> - Valid URL must be provided.
-  
+- <b>URL</b> - Single valid URL must be provided.
+ 
+- <b>URLS</b> - Multiple URLs divided by semicolon.
+
 - <b>JSON</b> - Data must be provided in JSON format.
   
 - <b>BOOL</b> - Only true and false or 1 and 0 are allowed.
@@ -597,7 +599,7 @@ $api->update();
 echo $api->result;
 ```  
 
-<details><summary><b>Group of team member</b></summary>
+<details><summary><b>Group of team member</b> (<i>PLAIN</i>)</summary>
 
 #### PHP
 
@@ -608,7 +610,7 @@ $api->set('TeamGroup','Board members');
 
 </details>
 
-<details><summary><b>Name of team member</b></summary>
+<details><summary><b>Name of team member</b> (<i>PLAIN</i>)</summary>
 
 #### PHP
 
@@ -619,7 +621,7 @@ $api->set('TeamName','Benchy');
 
 </details>
 
-<details><summary><b>Title of team member</b></summary>
+<details><summary><b>Title of team member</b> (<i>PLAIN</i>)</summary>
 
 #### PHP
 
@@ -630,7 +632,7 @@ $api->set('TeamTitle','CEO of Awesome');
 
 </details>
 
-<details><summary><b>Links of team member</b></summary>
+<details><summary><b>Links of team member</b> (<i>URLS</i>)</summary>
 
 #### PHP
 
