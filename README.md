@@ -44,6 +44,7 @@ Code examples and types.
 - [/general/update](#generalupdate)
 - [/general/get](#generalget)
 - [/team/get](#teamget)
+- [/team/remove](#teamremove)
 
 ### Types
 
@@ -562,6 +563,25 @@ $api->set('TeamTitle');
 
 ```php
 $api->set('TeamLinks');
+```  
+
+</details>
+
+### /team/remove
+
+```php
+$api = new ICObenchAPI('/team');
+$api->set('TeamId',13); // Remove team member with ID 13
+$api->remove();
+echo $api->result;
+```  
+
+<details><summary><b>Remove team member by ID</b></summary>
+
+#### PHP
+
+```php
+$api->set('TeamId',13);
 ```  
 
 </details>
