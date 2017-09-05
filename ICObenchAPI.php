@@ -25,6 +25,9 @@ class ICObenchAPI {
 	// INSERT
 	public function insert(){ return $this->send('/insert'); }
 
+	// REMOVE
+	public function remove(){ return $this->send('/remove'); }
+	
 	// Send and handle the response
 	private function send($action){
 		
