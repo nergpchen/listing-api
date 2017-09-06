@@ -162,6 +162,22 @@ $api->set('SoftCap','100 ETH');
 
 </details>
 
+<details><summary><b>Logo and Icon</b> (<i>URL</i>)</summary>
+
+
+<b>Recommended</b>:
+- Logo: 300x170px 
+- Icon: 85x85px
+
+#### PHP
+
+```php
+$api->set('Logo','https://pbs.twimg.com/profile_images/892501914679726080/8ubMfUMe_400x400.jpg');
+$api->set('Icon','https://pbs.twimg.com/profile_images/892501914679726080/8ubMfUMe_400x400.jpg');
+```
+
+</details>
+
 <details><summary><b>BitcoinTalk thread</b> (<i>URL</i>)</summary>
 
 #### PHP
