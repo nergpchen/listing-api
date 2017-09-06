@@ -46,6 +46,7 @@ Code examples and types.
 - [/team/get](#teamget)
 - [/team/remove](#teamremove)
 - [/team/update](#teamupdate)
+- [/team/insert](#teaminsert)
 
 ### Types
 
@@ -669,6 +670,19 @@ $api->set('TeamImg','https://pbs.twimg.com/profile_images/892501914679726080/8ub
 ```  
 
 </details>
+
+### /team/insert
+
+```php
+$api = new ICObenchAPI('/team');
+$api->set('TeamGroup',"Developers");	// Advisors, Board, ...
+$api->set('TeamName',"Miss Benchy");	// Member's name
+$api->set('TeamTitle',"Code Chef");	// Member's title or position
+$api->set('TeamLinks',"https://facebook.com/ICObench;https://twitter.com/ICObench"); // Member's links to LinkedIn, Facebook, Twitter
+$api->set('TeamImg',"https://pbs.twimg.com/profile_images/892501914679726080/8ubMfUMe_400x400.jpg"); // Member's photo
+$api->insert();
+echo $api->result;
+```  
 
 ## Authors
 
