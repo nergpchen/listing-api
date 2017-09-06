@@ -643,6 +643,17 @@ $api->set('TeamLinks','https://facebook.com/ICObench;https://twitter.com/ICObenc
 
 </details>
 
+<details><summary><b>Photo of team member</b> (<i>URL</i>)</summary>
+
+#### PHP
+
+```php
+$api->set('TeamId',132);
+$api->set('TeamImg','https://pbs.twimg.com/profile_images/892501914679726080/8ubMfUMe_400x400.jpg');
+```  
+
+</details>
+
 ## Authors
 
 View list of [contributors](https://github.com/ICObench/listing-api/graphs/contributors) who participated in this project.
