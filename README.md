@@ -447,7 +447,27 @@ $api->set('RaisedLtc','100.32352');
 $api->set('RaisedWaves','100.32352');
 ```  
 
-</details>						
+</details>	
+
+<details><summary><b>Raised Fiat (USD)</b> (<i>NUM</i>)</summary>
+
+#### PHP
+
+```php
+$api->set('RaisedFiat','100.32352');
+```  
+
+</details>
+
+<details><summary><b>Raised Total (USD)</b> (<i>NUM</i>)</summary>
+
+#### PHP
+
+```php
+$api->set('RaisedTotal','100.32352');
+```  
+
+</details>
 
 <details><summary><b>ICO short tagline</b>, 50 chars (<i>PLAIN</i>)</summary>
 
