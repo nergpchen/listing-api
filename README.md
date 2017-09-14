@@ -167,8 +167,8 @@ $api->set('SoftCap','100 ETH');
 
 
 <b>Recommended</b>:
-- Logo: 300x170px 
-- Icon: 85x85px
+- Logo: 360x205px 
+- Icon: 100x100px
 
 #### PHP
 
